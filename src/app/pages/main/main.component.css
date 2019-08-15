@@ -13,3 +13,19 @@
   margin-top: 20px;
   text-align: center;
 }
+
+.download-btn {
+  background-color: #eeeeee;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 0.25rem;
+  border: 1px #0e0e0e solid;
+  cursor: pointer !important;
+  color: #020202;
+}
+.download-btn:hover {
+  color: #3b72eb;
+}
+a {
+  text-decoration: none !important;
+}

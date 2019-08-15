@@ -1,0 +1,15 @@
+.main {
+  margin: 10px;
+}
+
+.preview {
+  margin-top: 20px;
+}
+.img-preview {
+  padding: 20px;
+}
+
+.upload {
+  margin-top: 20px;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="main">
+  <div class="upload">
+    <input (change)="resizeImage($event)" type="file" name="pic" accept="image/*">
+    <div class="preview">
+      <div *ngIf="imagePreview50x50 != null || imagePreview150x150 != null || imagePreview250x250 != null">
+        <img class="img-preview" [src]="sanitizer.bypassSecurityTrustUrl(imagePreview50x50)">
+        <img class="img-preview" [src]="sanitizer.bypassSecurityTrustUrl(imagePreview150x150)">
+        <img class="img-preview" [src]="sanitizer.bypassSecurityTrustUrl(imagePreview250x250)">
+      </div>
+      <button *ngIf="imagePreview50x50 != null || imagePreview150x150 != null || imagePreview250x250 != null" download="content.txt">Download</button>
+    </div>
+  </div>
+</div>

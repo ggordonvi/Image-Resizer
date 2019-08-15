@@ -2,15 +2,15 @@
   <p class="support-text">Upload an image for your emote and let us do the sizing for you.</p>
   <p class="support-text">*Currently need 1 to 1 aspect ratio images, please adjust and upload for best results.</p>
   <div class="upload">
-    <input (change)="resizeImage($event)" type="file" name="pic" accept="image/*">
+    <input class="upload-btn" (change)="resizeImage($event)" type="file" name="pic" accept="image/*">
     <div class="preview" *ngIf="checkForImage()">
       <div class="images">
         <img class="img-preview" [src]="sanitizer.bypassSecurityTrustUrl(imagePreview[0])">
         <img class="img-preview" [src]="sanitizer.bypassSecurityTrustUrl(imagePreview[1])">
         <img class="img-preview" [src]="sanitizer.bypassSecurityTrustUrl(imagePreview[2])">
       </div>
-      <div>
-        <p class="support-text">Download three sizes needed:</p>
+      <p class="support-text">Download three sizes needed:</p>
+      <div class="downloads">
         <a class="download-btn" [href]="fileUrl[0]" download="28x28.png">28x28</a>
         <a class="download-btn" [href]="fileUrl[1]" download="56x56.png">56x56</a>
         <a class="download-btn" [href]="fileUrl[2]" download="112x112.png">112x112</a>

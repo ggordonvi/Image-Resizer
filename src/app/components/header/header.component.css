@@ -1,9 +1,27 @@
 .header {
   margin: 0 !important;
   text-align: center;
+  background-color: #309e99;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
 }
 
 .brand {
   font-size: 1.5rem;
   font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 4px;
+}
+
+.brand-support {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  color: #1b1b1b;
+  letter-spacing: 1px;
+}
+
+p {
+  margin:0 !important;
 }

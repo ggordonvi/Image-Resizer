@@ -7,12 +7,14 @@ import { MainComponent } from './pages/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import { Ng2ImgMaxModule } from 'ng2-img-max';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,18 @@
 .main {
   margin: 10px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
-
+.support-text {
+  text-align: center;
+  font-size: 18px;
+}
 .preview {
   margin-top: 20px;
+}
+.images {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .img-preview {
   padding: 20px;

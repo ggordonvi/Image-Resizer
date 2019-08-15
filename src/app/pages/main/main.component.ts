@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Ng2ImgMaxService } from 'ng2-img-max';
 import { DomSanitizer } from '@angular/platform-browser';
+import { ImageCroppedEvent } from 'ngx-image-cropper';
 
 @Component({
   selector: 'app-main',
@@ -14,12 +15,32 @@ export class MainComponent {
   fileUrl: any[] = [];
   blob: any[] = [];
 
+  imageChangedEvent: any = '';
+  croppedImage: any = '';
+
   reader: FileReader = new FileReader();
 
   constructor(
     private ng2ImgMax: Ng2ImgMaxService,
     public sanitizer: DomSanitizer
   ) { }
+
+  fileChangeEvent(event: any): void {
+    this.imageChangedEvent = event;
+  }
+  imageCropped(event: ImageCroppedEvent) {
+    this.croppedImage = event.base64;
+  }
+  imageLoaded() {
+      // show cropper
+  }
+  cropperReady() {
+      // cropper ready
+  }
+  loadImageFailed() {
+      // show message
+  }
+
 
   resizeImage(event) {
     const image = event.target.files[0];

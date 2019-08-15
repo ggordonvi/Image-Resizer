@@ -1,3 +1,11 @@
-# ImageResizer
+# Image Resizer
 
-Takes an image from client, resizes on client side, and then allows client to download.
+All client side image resizer.
+
+Current implementation takes image and resizes it to 28 x 28, 56 x 56, and 112 x 112 for the purpose of Twitch.tv emotes.
+
+## Packages Used
+
+Ng2ImgMaxService - https://www.npmjs.com/package/ng2-img-max
+DomSanitizer - https://angular.io/api/platform-browser/DomSanitizer
+fileSaver - https://www.npmjs.com/package/file-saver
